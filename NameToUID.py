@@ -1,5 +1,4 @@
 import random
-import pandas
 import xlrd
 
 book = xlrd.open_workbook('ItemIndex.xlsx')
@@ -27,6 +26,6 @@ def CheckCells():
             print('Item Found')
         else:
             break
-
+    lencol = (len(colvalues))
 
 CheckCells()
